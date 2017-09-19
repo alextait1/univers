@@ -1,0 +1,74 @@
+.teachers h2 {
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 30px;
+	@include respond-to("large"){
+			padding-top: 100px;
+		}
+}
+
+.subtext--teachers{
+	text-align: center;
+	max-width: 50%;
+	color: $grey;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
+
+.card2{
+	justify-content: space-between;
+	padding-bottom: 105px;
+	max-width: 100%;
+	h6 {
+		padding-top: 40px;
+	}
+	.green_text {
+		color:$green;
+		font-size: $large;
+		@include respond-to("medium"){
+			padding:0;
+		}
+	}
+	.uppercase {
+		text-transform: uppercase;
+		color:$grey;
+		font-weight: 400;
+		display: inline;
+		letter-spacing: 1px;
+		@include respond-to("medium"){
+			padding-top:5px;
+			margin:0;
+		}
+		}
+
+	img{
+			max-width:100%;
+		}
+
+	@include respond-to("medium"){
+		flex-direction:column;
+	}	
+	}
+
+.teacher {
+	@include respond-to("medium"){
+		width:100%;
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+	}
+}
+
+.card2--teacher1, .card2--teacher2 {
+	margin-right:40px;
+}
+
+	.social--grey {
+		display: inline;
+		color:$grey;
+		padding-left: 35px;
+		@include respond-to("medium"){
+			padding-left:0;
+			padding-bottom: 30px;
+		}
+	}

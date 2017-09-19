@@ -1,0 +1,42 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+ul, li {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: $black;
+	transition: all 0.3s;
+	display: inline-block;
+}
+
+a:hover {
+	transform: scale(1.2);
+	color: $green;
+}
+
+.flex {
+	display: flex;
+}
+
+.pricing_lists {
+	justify-content: space-between;
+}
+
+.price_card {
+	width:31%;
+}
+
+.list {
+	width: 25%;
+}
+
+.copyright {
+	text-align: center;
+}

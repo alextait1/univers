@@ -1,0 +1,56 @@
+// Headings 
+
+h1,h2,h3,h4,h5,h6 {
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	@include heading(55px);
+	@include respond-to("small"){
+		font-size: 40px;
+	}
+}
+
+h2 {
+	@include heading(36px);
+}
+
+h3 {
+	@include heading(30px);
+}
+
+h4 {
+	@include heading(20px);
+}
+
+h5 {
+	@include heading(18px);
+	line-height: 30px;
+}
+
+h6 {
+	@include heading(25px);
+}
+
+// Paragraph
+
+p {
+	font-family: $baseFont;
+	font-size: $normal;
+}
+
+p.large_text {
+	font-size: $large;
+}
+
+p.small_text {
+	font-size: $small;
+}
+
+// Lists
+
+li {
+	font-family: $baseFont;
+	font-family: $normal;
+}

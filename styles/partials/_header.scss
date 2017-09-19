@@ -1,0 +1,248 @@
+.banner_border {
+	border-bottom: 1px solid rgb(231,231,231);
+}
+
+// first banner
+
+.banner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.banner p {
+	color: #666666;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 0;
+}
+
+.banner_left {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.banner_right {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width:40%;
+	@include respond-to("large"){
+		width:50%;
+	}
+	@include respond-to("medium"){
+		flex-direction:column;
+		p{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	}
+}
+
+.phone_number_header {
+	font-size: 12px;
+	p {
+		display: inline-block;
+	}
+	@include respond-to("small"){
+		display: none;
+	}
+}
+
+.email {
+	font-size: 12px;
+	p {
+		display: inline-block;
+	}
+	@include respond-to("small"){
+		display: none;
+	}
+}
+
+.social--green i {
+	color: $green;
+	font-size: 14px;
+	@include respond-to("medium"){
+		padding-bottom: 10px;
+	}
+	@include respond-to("small"){
+		font-size: 20px;
+		padding-left:5px;
+	}
+	}
+
+
+// second banner/Nav
+
+
+.logo_banner {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+.logo {
+	text-transform: uppercase;
+	padding-top:35px;
+	padding-bottom: 35px;
+	@include respond-to("large"){
+		padding-top:20px;
+		padding-bottom: 20px;
+	}
+	p {
+		font-size: 35px;
+		font-weight:700;
+		margin: 0;
+	}
+}
+
+.nav_container {
+	width: 60%;
+	position:relative;
+	@include respond-to("xlarge"){
+		width:70%;
+	}
+	@include respond-to("large"){
+		width:80%;
+	}
+
+}
+
+.nav_ul{
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	@include respond-to("large"){
+		width:100%;
+	}
+	@include respond-to("medium"){
+		display:none;
+	}
+	li {
+		text-transform: uppercase;
+		@include respond-to("large"){
+		font-size: 12px;
+		}
+	a:last-child {
+		padding-right:10px;
+		}
+	}
+}
+
+
+.nav__item--active a{
+	color: $green;
+}
+
+// Hamburger menu
+
+input#toggle:checked + .nav_ul {
+	display: flex;
+	position: relative;
+	@include respond-to("medium"){
+		flex-direction:column;
+	}
+	li {
+	@include respond-to("medium"){
+		width:100px;
+		font-size: $normal;
+		text-align: center;
+		}
+	}
+}
+
+input#toggle:checked + .nav_ul {
+	position: relative;
+}
+
+input#toggle {
+	display:none;
+}
+
+
+label[for="toggle"] {
+	display: none;
+	font-family: $baseFont;
+	font-size: $normal;
+	text-transform: uppercase;
+	@include respond-to("medium") {
+		display: block;	
+		color: black;
+		position:absolute;
+		right:10px;
+		bottom:0;
+		z-index: 100;
+	}
+}
+
+// Hero
+
+.hero {
+	background-image: url(../assets/images/header/hero.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:100vh;
+	position:relative;
+}
+
+.hero__heading {
+	width:100%;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+.scroll_dots--white {
+	position: absolute;
+	top: 90%;
+	left:50%;
+	transform: translateX(-50%);
+	@include respond-to("large"){
+		top:93%;
+	}
+}
+
+header h3,h1,h4 {
+		text-transform: uppercase;
+		color: white;
+		text-align: center;
+		margin:0 auto;
+}	
+
+
+	.header_h3 {
+		padding-bottom: 25px;
+		position: relative;
+	}
+
+	.header_h3:after{
+		content:"";
+		position:absolute;
+		width:150px;
+		height:1px;
+		color: white;
+		border-bottom: 1px solid white;
+		display: block;
+		width:150px;
+		left:50%;
+		transform: translateX(-50%);
+		bottom:0;
+
+	}
+
+	h1 {
+		padding-top: 20px;
+	}
+
+	header h4 {
+		padding-top: 25px;
+		padding-bottom: 70px;
+		@include respond-to("large"){
+		padding-bottom: 20px;
+			}
+		}
+
+
+	
+

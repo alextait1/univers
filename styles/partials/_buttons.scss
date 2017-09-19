@@ -1,0 +1,160 @@
+.button {
+	text-align: center;
+	text-transform: uppercase;
+	color:white;
+}
+
+.button--transparent_white {
+	border: 1px solid white;
+	border-radius: 50px;
+	margin: 0 auto;
+	left:50%;
+	position: absolute;
+	transform:translateX(-50%);
+	width:250px;
+	padding: 20px 70px;
+	font-size: 18px;
+	margin:0;
+}
+
+.button--transparent_green {
+	border: 1px solid $green;
+	border-radius: 50px;
+	margin: 0 auto;
+	left:50%;
+	position: absolute;
+	transform:translateX(-50%);
+	p {
+		padding: 20px 40px;
+		font-size: 18px;
+		margin:0;
+		color:black;
+		@include respond-to("small"){
+		padding: 10px 20px;
+	}
+	}
+}
+
+.edButtons {
+	max-width: 400px;
+	margin: 0 auto;
+	justify-content:space-between;
+	padding-bottom: 150px;
+	@include respond-to("large"){
+			padding-bottom: 100px;
+		}
+	p {
+		padding: 20px 36px;
+		font-size: 13px;
+		margin:0;
+		color:white;
+	}
+	@include respond-to("medium"){
+		padding-top:50px;
+	}
+	@include respond-to("small"){
+		flex-direction:column;
+		align-items: center;
+	}
+}
+
+.button--green {
+	background-color: $green;
+	border: 1px solid $green;
+	font-size: 13px;
+	border-radius: 50px;
+	width:190px;
+	p {
+		font-size: 13px;
+		color:white;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	@include respond-to("small"){
+		margin-bottom: 20px;
+	}
+}
+
+.news_buttons {
+	width:420px;
+	margin: 0 auto;
+	justify-content:space-between;
+	@include respond-to("medium"){
+		padding-top:50px;
+	}
+	@include respond-to("small"){
+		flex-direction:column;
+		align-items: center;
+	}
+}
+
+
+.button--grey {
+	background-color: #070707;
+	border: 1px solid #070707;
+	border-radius: 50px;
+	width:190px;
+	p {
+		font-size: 13px;
+		color:white;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+.button--small{
+	text-transform: none;
+	padding: 8px 15px;
+	width:68px;
+	p,i {
+		display: inline;
+	}
+
+	i {
+		padding-left: 3px;
+		font-size: $small;
+	}
+}
+
+.button--black {
+	background-color: $black;
+	border: 1px solid $black;
+	font-size: 13px;
+	border-radius: 50px;
+	width:190px;
+	p {
+		font-size: 13px;
+		color:white;
+	}
+}
+
+.teacher_button {
+	margin: 0 auto;
+}
+
+.button--transparent_green2 {
+	border: 1px solid $green;
+	border-radius: 50px;
+	margin: 0 auto;
+	width: 210px;
+	margin-bottom: 150px;
+	@include respond-to("large"){
+			margin-bottom: 100px;
+		}
+	p {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: 700;
+	}
+}
+
+.button--message {
+border-radius: 7px;
+background-color: $green;
+width: 236px;
+padding: 18px 48px;
+margin-bottom: 150px;
+@include respond-to("large"){
+	margin-bottom:100px;
+	}
+}
